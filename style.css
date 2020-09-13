@@ -1,0 +1,164 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.git-but{
+    font-family: var(--ff-primary);
+    color: var(--clr-dark);
+}
+
+::selection{
+    background:#ef108a;
+}
+
+:root{
+    
+    /* font-family  */
+    --ff-primary : 'Raleway', sans-serif;
+    --ff-secondary : 'gilroy', sans-serif;
+
+    /* font-weights */
+    --fw-reg : 300;
+    --fw-bold : 900;
+
+    /* colors */
+    --clr-light : #f5f5f5;
+    --clr-limegreen : #D6ED17;
+    --clr-dark : #25011b;
+    --clr-darker-dark : #1b0011;
+
+    /* font-size */
+    --fs-h1: 3.5rem;
+    --fs-h2: 3rem;
+    --fs-h3: 1.8rem;
+    --fs-nav-logo: 2.1rem;
+    --fs-nav-links: 1.2rem;
+    --fs-body: 1.2rem;
+
+}
+
+@media (max-width :900px){
+    :root{
+        --fs-h1: 2.6rem;
+        --fs-h2: 2.25rem;
+        --fs-h3: 1.5rem;
+        --fs-nav-logo: 2rem;
+        --fs-nav-links: 1.2rem;
+        --fs-body: 1.125rem;
+    }
+    
+}
+
+@media (max-width : 450px){
+    :root{
+        --fs-h1: 2.2rem;
+        --fs-h2: 1.8rem;
+        --fs-h3: 1.2rem;
+        --fs-nav-logo: 2rem;
+        /* --fs-nav-links: 1.2rem; */
+        --fs-body: 1.125rem;
+    }
+}
+
+@media (max-width: 360px){
+    :root{
+        --fs-h1: 2rem;
+        --fs-h2: 1.5rem;
+        --fs-h3: 1.1rem;
+        --fs-nav-logo: 1.5rem;
+        /* --fs-nav-links: 1.2rem; */
+        --fs-body: 1.125rem;
+    }
+}
+
+@media (max-width: 300px){
+    :root{
+        --fs-h1: 2rem;
+        --fs-h2: 1.25rem;
+        --fs-h3: 1rem;
+        --fs-nav-logo: 1.25rem;
+        /* --fs-nav-links: 1.2rem; */
+        --fs-body: 1rem;
+    }
+}
+
+a:link{
+    text-decoration: none;
+    color: var(--clr-light)
+}
+
+a:visited{
+    color: var(--clr-light)
+}
+
+a:hover{
+    color: var(--clr-limegreen);
+}
+
+
+body{
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    font-family : var(--ff-primary);
+    font-size : var(--fs-body);
+    font-weight: var(--fw-reg);
+    line-height: 1.6;
+}
+
+strong{
+    font-weight: var(--fw-bold);
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+h1,h2,h3{
+    /* font-family : var(--ff-gilroy); */
+    line-height: 1.1;
+}
+
+h1{font-size: var(--fs-h1);}
+h2{font-size: var(--fs-h2);}
+h3{font-size: var(--fs-h3);}
+
+.section-title{
+    text-align: center;
+    font-family: var(--ff-gilroy);
+    font-size: var(--fs-h1);
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    font-family: var(--ff-primary);
+    align-items: center;
+    padding: 2em 0em 2em 0em
+}
+
+about-me{
+    display:flex;
+    justify-content: center;
+
+}
+
+.myphoto{
+    width: 400px;
+}
+
+.my-body{
+    padding: 0em 0em 0em 2em;
+    font-size: var(--fs-h3)
+}
+
+#proj{
+    padding:5em 3em 2em 0em
+}
+
+.git-but a{
+    color: var(--clr-darker-dark);
+}
