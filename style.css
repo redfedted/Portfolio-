@@ -132,15 +132,17 @@ h3{font-size: var(--fs-h3);}
     font-size: var(--fs-h1);
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-around;
     font-family: var(--ff-primary);
     align-items: center;
     padding: 2em 0em 2em 0em
 }
-
-about-me{
+.nav button{
+    font-family: var(--ff-primary);
+}
+#about-me{
     display:flex;
     justify-content: center;
 
@@ -150,15 +152,65 @@ about-me{
     width: 400px;
 }
 
-.my-body{
-    padding: 0em 0em 0em 2em;
+.am-body{
+    padding: 5em 0em 0em 2em;
     font-size: var(--fs-h3)
 }
 
+.section-title-services{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#services-section{
+    background-image: 
+}
+.section-title-services{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.services{
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5% 0% 0% 0%;
+}
+
+.service{
+    margin: 3em 1em 3em 1em;
+    flex: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+.service-icon{
+    width:150px;
+    margin: 0em 0em 2em 0em;
+}
+
+.service{
+    transition: transform 1s ease;
+}
+
+.service:hover{
+    transform: scale(1.1);
+}
 #proj{
     padding:5em 3em 2em 0em
 }
 
 .git-but a{
     color: var(--clr-darker-dark);
+}
+
+.social-list-item {
+    width: 40px;
+    color: var(--clr-light);
 }
